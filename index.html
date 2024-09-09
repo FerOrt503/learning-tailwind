@@ -7,15 +7,22 @@
     <title>Tailwind CSS</title>
   </head>
   <body class="bg-slate-100">
-    <header class="bg-blue-200 px-6 shadow">
+    <header class="bg-blue-200 px-7 shadow">
       <div class="flex h-16 items-center justify-between">
-        <button>=</button>
-        <a href="#">logo</a>
+        <button class="-ml-1 transition-colors hover:bg-slate-500 hover:text-blue-200 focus:ring-2 focus:ring-slate-700">
+          <img src="./icons/menu.png" alt="Menu Icon" class="w-7 h-7"></button>
+        <a class="-mr-4 hover:rotate-6 duration-300" href="#"><img src="./icons/logo.png" alt="Menu Icon" class="w-12 h-12"></a>
         <div>
-          <button>theme</button>
-          <button>user</button>
+          <button class="ml-4 rounded-full p-1 hover:bg-slate-500  hover:text-blue-200 focus:ring-2 focus:ring-slate-700"><img src="./icons/theme.png" alt="Menu Icon" class="w-8 h-8"></button>
+          <button class="rounded-full p-2 hover:bg-slate-500  hover:text-blue-200 focus:ring-2 focus:ring-slate-700">
+            <img src="./icons/user.png" alt="User Icon" class="w-7 h-7"></button>
         </div>
       </div>
+    </div>
+    <div>
+      <a href="#" class="text-slate-700 hover:bg-slate-500 hover:text-blue-200">
+        Home
+      </a>
     </div>
   </header>
   </body>
