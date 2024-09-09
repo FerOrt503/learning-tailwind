@@ -8,7 +8,7 @@
   </head>
   <body class="bg-slate-100">
     <header class="bg-blue-200 px-7 shadow">
-      <div class="flex h-16 items-center justify-between">
+      <div class="flex h-16 max-w-6xl mx-auto items-center justify-between">
         <!-- Boton de menu -->
         <button
           class="-ml-1 text-slate-500 hover:bg-slate-400 hover:text-blue-200 transition-colors focus:ring-2 focus:ring-slate-600">
@@ -28,14 +28,26 @@
         <div class="flex -mr-28 items-center">
           <!-- Logo -->
           <a class="-mr-16 hover:rotate-6 duration-300" href="#">
-            <img src="./icons/logo.png" alt="Menu Icon" class="w-12 h-12" />
+            <img src="./Public/logo.png" alt="Menu Icon" class="w-12 h-12" />
           </a>
-          <!-- Links de navegcación escritorio -->
-          <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+          <!-- Links de navegación escritorio -->
+          <div class="ml-16 hidden md:flex space-x-16">
+            <a class="px-3 py-2 text-slate-800" href="#">Home</a>
+            <a
+              class="px-3 py-2 text-slate-500 transition-colors hover:bg-slate-800"
+              href="#"
+              >About</a
+            >
+            <a
+              class="px-3 py-2 text-slate-500 transition-colors hover:bg-slate-800"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="px-3 py-2 text-slate-500 transition-colors hover:bg-slate-800"
+              href="#"
+              >Contact</a
+            >
           </div>
         </div>
         <div class="flex">
@@ -66,7 +78,7 @@
         </div>
       </div>
       <!-- Links de navegcación móvil -->
-      <div class="space-y-1 border-t pb-3 pt-2 md:hidden">
+      <div class="space-y-1 border-t pb-3 pt-2 hidden">
         <a
           class="block rounded-md text-slate-500 px-3 py-2 transition-colors hover:bg-slate-700 hover:text-blue-200"
           href="#">
@@ -89,5 +101,38 @@
         </a>
       </div>
     </header>
+    <!-- clase para los articulos -->
+    <main class="p-4">
+      <article class="overflow-hidden rounded bg-white shadow">
+        <div class="h-52">
+          <img
+            class="h-full w-full object-center"
+            src="/Public/1.png"
+            alt="TrajeMujer" />
+        </div>
+        <div clas="space-y-13 p-15">
+          <h3>Traje de Mujer</h3>
+          <h2>
+            Conjunto de 2 piezas para mujer, con una solapa y cuello con
+            botones, ajuste delgado.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            aspernatur dicta quae, deleniti culpa recusandae debitis eos
+            sapiente voluptatem cupiditate ex repellat accusantium, rem nemo
+            doloribus dolor impedit perferendis nisi.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https:ui-avatars.com/api?name=Ximena Lagos"
+            alt="Ximena Lagos" />
+        </div>
+        <div>
+          <span>Ximena Lagos</span>
+          <span>Mar 18, 2024</span>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
